@@ -37,41 +37,58 @@ public class StudentsMark
             System.out.println("Invalid mark, please enter again");
             }
             
-            //for array para arreglar el 0
-            marks[i]=temp;
         
             }
         }
-        System.out.println("Entered marks");
+        /*System.out.println("Entered marks");
         for(int i=0; i<numberOfStudents; i++){ //to get print data
             
             System.out.println(marks[i]);           
         
+        }*/
+        //Display assignment name and marks
+        System.out.println("Assignment: " +assignmentName);
+        System.out.println("Entered marks:");
+        for(float mark : marks){
+        
+            System.out.println(mark);        
+        }
+        //Calculate and display highest and lowest mark
+        float highest=marks[0];
+        float lowest =marks[0];
+        
+        for (float mark:marks){
+            if(mark>highest)highest=mark;
+             if(mark>lowest)lowest=mark;
         }
         
+        System.out.println("Highest mark:" +highest);
+        System.out.println("Lowest mark:" +lowest);
+        
+        
+        //Calculate mean
         float total=0;
-        
-        for(int i=0; i<numberOfStudents; i++){
-            total= total+ marks[i];
-               
-        
-         }
-        float mean=0;
-        mean=total/numberOfStudents;
-        System.out.println("This is the mean mark:");
-        System.out.print(mean);
     
-        float sumdiff=0;
-        for(int i=0; i<numberOfStudents; i++){
-            sumdiff=sumdiff+(marks[i]-mean)* (marks[i]-mean);
-            
-            sumdiff=sumdiff/numberOfStudents;
+        for(float mark: marks){
+            total= total+ mark;
+                       
+         }
+        float mean=total/numberOfStudents;
+        System.out.println("This is the mean mark:" +mean);
+    
+        //Calculate standard deviation
+        float sumDiff=0;
+        for(float mark:marks){
+            sumDiff=sumDiff+(mark-mean)* (mark-mean);
+        }
+        float standardDeviation= (float) Math.sqrt(sumDiff/ numberOfStudents);
+        System.out.println("Standard deviation:" +standardDeviation);
+        scanner.close();
         
          }
          
-        System.out.println(Math.abs(-1));
-         
+     
+        
          
     }
-}
-
+ 
