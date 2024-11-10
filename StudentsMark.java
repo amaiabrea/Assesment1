@@ -28,7 +28,7 @@ public class StudentsMark
         for(int i=0; i<numberOfStudents; i++){ //to get input for user
             while(true){
             
-            float temp= scanner.nextFloat(); //guardo las notas que yo doy de input en mi lista marks[]
+            float temp= scanner.nextFloat(); //saving the marks i input in my list marks[]
             if(temp >=0 && temp <=30){
                 
                 marks[i]=temp;
