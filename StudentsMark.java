@@ -78,7 +78,6 @@ public class StudentsMark
         System.out.println("This is the mean mark:" +mean);
     
         //Calculate standard deviation
-        
         float sumDiff=0;
         for(float mark:marks){
             sumDiff=sumDiff+(mark-mean)* (mark-mean);
