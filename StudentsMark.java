@@ -67,7 +67,7 @@ public class StudentsMark
         System.out.println("Lowest mark:" +lowest);
         
         
-        //Calculate mean
+        //Calculate mean: Algorithm2
         float total=0;
     
         for(float mark: marks){
