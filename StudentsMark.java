@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class StudentsMark
 {
     public static void main(String [] args){
-        int numberOfStudents=5;
+        int numberOfStudents=30;
         
         float[] marks= new float[numberOfStudents];
         
