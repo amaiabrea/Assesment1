@@ -85,6 +85,10 @@ public class StudentsMark
         System.out.println("Standard deviation:" +standardDeviation);
         scanner.close();
         
+        
+        
+        
+        
          }
          
      
