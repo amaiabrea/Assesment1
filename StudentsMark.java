@@ -54,7 +54,7 @@ public class StudentsMark
         
             System.out.println(mark);        
         }
-        //Calculate and display highest and lowest mark
+        //Calculate and display highest and lowest mark:Algorithm 1
         float highest=marks[0];
         float lowest =marks[0];
         
