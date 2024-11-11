@@ -48,7 +48,6 @@ public class StudentsMark
         
         }*/
         //Display assignment name and marks
-        
         System.out.println("Assignment: " +assignmentName);
         System.out.println("Entered marks:");
         for(float mark : marks){
