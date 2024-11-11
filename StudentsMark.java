@@ -18,7 +18,6 @@ public class StudentsMark
         Scanner scanner= new Scanner(System.in);
         
         //Input assignment name
-        
         System.out.println("Enter the assignment name:");
         String assignmentName=scanner.nextLine();
         
