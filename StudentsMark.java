@@ -71,6 +71,7 @@ public class StudentsMark
         
         
         //Calculate mean
+        
         float total=0;
     
         for(float mark: marks){
