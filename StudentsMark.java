@@ -26,6 +26,7 @@ public class StudentsMark
         
         //System.out.println("Give marks for 5 students");
         //Getting valid marks for each students
+        
         for(int i=0; i<numberOfStudents; i++){ //to get input for user
             while(true){
             
